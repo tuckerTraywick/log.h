@@ -1,4 +1,3 @@
-#include <stdio.h> // stdout, printf
 #define LOG_IMPL
 #include "log.h"
 
