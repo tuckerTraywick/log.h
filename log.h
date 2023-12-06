@@ -2,7 +2,7 @@
 #define LOG_H
 
 #include <stdbool.h> // bool
-#include <stdio.h> // fputs(), fprintf()
+#include <stdio.h> // FILE, fputs(), fprintf()
 
 #define LOG_FORMAT " %s:%d:%s "
 
