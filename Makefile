@@ -6,10 +6,8 @@ default: binary
 binary: example.o
 	@$(CC) $(CFLAGs) -I./ example.c -o $@
 
-example.o:
+example.o: log.h
 	@$(CC) $(CFLAGS) -c example.c -o $@
-
-example.c: log.h
 
 log.h:
 

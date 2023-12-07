@@ -4,7 +4,7 @@
 #include <stdbool.h> // bool
 #include <stdio.h> // FILE, fputs(), fprintf()
 
-#define LOG_FORMAT " %s:%d:%s "
+#define LOG_FORMAT " %s:%d:%s: "
 
 #define logDebug(string) if (enableDebug) {fprintf(debugOut, "[DEBUG]" LOG_FORMAT string "\n", __FILE__, __LINE__, __func__);}
 #define logfDebug(string, ...) if (enableDebug) {fprintf(debugOut, "[DEBUG]" LOG_FORMAT string "\n", __FILE__, __LINE__, __func__, __VA_ARGS__);}
